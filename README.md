@@ -7,7 +7,7 @@ I specialize in bridging the gap between **Low-Level Security** and **Cloud Infr
 ---
 
 ### 🔭 What I'm working on
-- **Cloud Posture Research:** Documenting attack vectors in AWS/GCP, focusing on **IAM**, **IMDS**, and Cloud Misconfigurations.
+- **Vulnerability Research:** Identifying Memory Corruption & Stack Exhaustion in Common Lisp compilers (SBCL). *Current research kept private during Responsible Disclosure.*
 - **Operation BLACKBIRD:** A custom CTF platform simulating C2 communication and data exfiltration over ICMP.
 - **Linux Hardening:** Exploring immutable operating systems (Fedora Kinoite) and container security.
 
@@ -18,9 +18,10 @@ I specialize in bridging the gap between **Low-Level Security** and **Cloud Infr
 
 ### 📚 Knowledge Base
 I believe in continuous learning and documentation. Check out my research notes:
-* [📂 Cloud Infrastructure & Posture Research](https://github.com/shay-mordechai/Cloud-Infra-Research)
-* [📂 Network Security Knowledge Base](https://github.com/shay-mordechai/Network-Security-Summaries)
+* [📂 Academic CS Summaries](https://github.com/shay-mordechai/Academic-CS-Summaries)
+* [📂 Network Security Toolbox](https://github.com/shay-mordechai/Network-Security-Toolbox)
 
 ---
-📫 **How to reach me:** [Your LinkedIn Profile Link]
+📫 **How to reach me:** [linkedin.com/in/shay-mor](https://www.linkedin.com/in/shay-mor/)
+
 *Connecting the dots between bits, bytes, and buckets.*
