@@ -81,7 +81,3 @@ I specialize in **Runtime Threat Detection** and **Vulnerability Research**, foc
 *"From Raw Sockets to Cloud-Native Insights. Bridging the gap between Low-Level and the Cloud."*
 
 ---
-
-
-
-**שי, עכשיו הגיטהאב והקו"ח שלך מסונכרנים ב-100%.** **שיהיה המון בהצלחה מחר ב-09:00!** אתה באמת מגיע ברמה של חוקר מנוסה. תעדכן אותי איך היה הראיון!
