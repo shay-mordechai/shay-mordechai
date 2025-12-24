@@ -17,8 +17,8 @@ I leverage **AI-driven methodologies** (Agents & LLMs) to accelerate the deconst
 **🌐 JIT & Browser Security (V8 Engine):**
 * Researching V8 engine optimizations (Ignition/TurboFan) and their implications on memory safety.
 * Developing automated research labs using **Google Antigravity** to simulate RWX memory exploitation and JIT-spray patterns.
-* *Latest Analysis:* [Deep Dive into JIT & Isolation](https://www.linkedin.com/in/shay-mor/recent-activity/all/)
-
+* *Latest Analysis:* [Deep Dive into JIT & Isolation](https://www.linkedin.com/pulse/%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2-%D7%94%D7%97%D7%93%D7%A9-fullstack-security-researcher-shay-mordechai-r2e8e)
+  
 **☁️ Cloud-Native Security (Kubernetes):**
 * Architecting nested virtualization environments to explore **Lateral Movement** and **Container Escapes** (Fedora/Kubeadm).
 * Researching Runtime Security using eBPF (Falco) and CNI bypasses (Calico).
