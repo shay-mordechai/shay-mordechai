@@ -28,6 +28,7 @@ My work bridges the gap between **Low-Level Internals** (Binary Analysis, Raw So
 **📡 Network Protocol & Traffic Analysis Toolset**
 * **TLS Traffic Generator:** Built a custom traffic generator using **Scapy** and implemented core protocols (HTTP/DNS/SMTP) from scratch using **Raw Sockets** for deep packet inspection.
 * **Adversarial Simulation:** Researching encryption protocols and traffic manipulation techniques to simulate complex network attack vectors.
+* **Architectural Hardening:** Proposed a deterministic TTL-based mitigation for DNS Rebinding (LANJack) vulnerability, validated through research and collaboration with industry network vendors.
 
 ---
 
@@ -56,6 +57,6 @@ My work bridges the gap between **Low-Level Internals** (Binary Analysis, Raw So
 
 ---
 
-📫 **How to reach me:** [linkedin.com/in/shay-mor](https://www.linkedin.com/in/shay-mor/)
+📫 **How to reach me:** [linkedin.com/in/shay-mordechai](https://www.linkedin.com/in/shay-mordechai/)
 
 > *"Detecting the signal within the noise. From Packet Headers to Market Trends."*
