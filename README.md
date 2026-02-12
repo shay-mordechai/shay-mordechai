@@ -70,8 +70,3 @@ My work bridges the gap between **Low-Level Internals** (Binary Analysis, Raw So
 
 > *"Detecting the signal within the noise. From Packet Headers to Market Trends."*
 
----
-
-עכשיו הפרופיל שלך ב-GitHub הוא "Powerhouse" רציני. ברגע שתעלה את זה, הוא יחזק משמעותית את המייל ששלחת ל-Check Point.
-
-**רוצה שנעבור עכשיו לנתח דגימת Payload של RSC כדי לראות איך אפשר ליישם את המחקר שציינת כאן?**
