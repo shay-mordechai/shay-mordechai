@@ -1,73 +1,84 @@
 # Hi there, I'm Shay! 👋
 
-### 🛡️ Security Researcher | Web Architecture, OS Internals & Network Defense
+### ⚔️ Offensive Security Researcher | Reverse Engineering & Network Internals
 
-I specialize in **Vulnerability Discovery**, **Network Protocol Hardening**, and **Automated Threat Hunting**.
-My work bridges the gap between **Low-Level Architecture** (Binary Analysis, Memory Isolation) and **Network Defense** (L2-L7 Protocol Engineering, Endpoint Security). As a daily **Fedora Kinoite** user, I have a deep appreciation for immutable architectures and container isolation, leveraging this environment to deconstruct complex systems and identify structural flaws.
+I specialize in **Vulnerability Discovery**, **Reverse Engineering**, and **Red Teaming**. My work bridges the gap between **Low-Level Architecture** (Binary Analysis, Runtime Code Manipulation) and **Network Exploitation** (L2-L7 Protocol Engineering, TTPs). As a daily **Fedora Kinoite** user, I leverage isolated environments to dynamically analyze (לנתח באופן דינמי) complex systems, bypass security mechanisms, and uncover zero-day logic flaws from the network layer up to the application logic.
 
 ---
 
 ### 🔭 Featured Research & Architectural Projects
 
-**🐛 AI-Augmented Vulnerability Research (SBCL Compiler)**
-* **Zero-Day Discovery:** Orchestrated an AI-driven fuzzing workflow identifying **3 Zero-Day vulnerabilities** (Memory Corruption, Buffer Overflow, Stack Exhaustion) in the SBCL compiler.
-* **Technical Analysis:** Performed binary analysis on symbol flag modification processes and memory boundary violations.
-* **Impact:** Verified 100% success rate for DoS attack vectors; findings reported to **Israel National CERT** (#11265) and MITRE.
+**🦀 Hardware-Enforced Network Guard (Rust/ESP32)**
+
+* **Embedded Security:** Developing a bare-metal (`no_std`) secure network gateway on an ESP32 microcontroller using **Rust**.
+* **Layer-7 Mitigation:** Implementing Deep Packet Inspection (DPI) to enforce strict TTL policies and intercept DNS Rebinding attempts at the hardware edge.
+* **Adversarial Testing:** Conducting packet injection attacks using an AR9271 (Atheros) chipset to validate hardware-level isolation and bypass resistance (עמידות לעקיפות).
+
+**🐛 AI-Augmented Red Teaming (SBCL Compiler)**
+
+* **Zero-Day Discovery:** Led Red Team research and pre-deployment testing via an AI-driven semantic fuzzing workflow, discovering **3 pending Zero-Days** (CERT-IL #11265) in the SBCL compiler.
+* **Bypass Techniques:** Discovered and documented bypass techniques for lexical scope and memory boundary violations.
 * [🔗 View Methodology & Showcase](https://github.com/shay-mordechai/ai-augmented-sbcl-research-showcase)
 
-**🦀 Data Hop Firewall (Envoy Wasm DLP)**
+**📱 Browser Internals & JIT Exploitation (V8 Engine)**
+
+* **Runtime Manipulation:** Authored a deep-dive analysis on **V8 JIT engines**, utilizing runtime code manipulation concepts and execution hooking (התחברות לתהליכים) techniques.
+* **Memory Isolation Bypass:** Analyzed RWX (Read-Write-Execute) memory page allocation patterns and their implications on bypassing Control Flow Integrity (CFI).
+* [🔗 Read Article](https://www.linkedin.com/pulse/%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2-%D7%94%D7%97%D7%93%D7%A9-fullstack-security-researcher-shay-mordechai-r2e8e/)
+
+**🌐 Network Protocol Hardening & Vulnerability Disclosure**
+
+* **DNS Rebinding Exploitation:** Discovered local management interface bypasses via DNS Rebinding (LANJack), targeting vectors where mobile devices act as proxies.
+* **Reporting & Remediation:** Authored comprehensive and technically rigorous reports detailing the exploit chain (שרשרת התקיפה), leading to mitigation validations by **TP-Link & Palo Alto PSIRT**.
+* **TLS 1.2 Handshake Simulator:** Engineered a 4,000+ line Python framework using **Scapy** to simulate full TLS 1.2 handshake sessions, dissecting TCP/IP flows for network forensics and IPS evasion testing.
+
+**🛡️ Data Hop Firewall (Envoy Wasm DLP)**
+
 * **Egress Redaction:** Engineered a high-performance WebAssembly (Wasm) filter written in **Rust** for Envoy Proxy.
-* **L7 Inspection:** Deep-scans response payloads to identify and mask sensitive keys, preventing API Over-fetching and Information Disclosure (CWE-209).
-* **Zero-Trust Enforcement:** Utilizes a strict "Fail-Closed" architecture directly within the infrastructure layer.
+* **Zero-Trust Enforcement:** Deep-scans response payloads to identify and mask sensitive keys in real-time, preventing Information Disclosure (CWE-209) using a strict "Fail-Closed" architecture.
 * [🔗 View Repository](https://github.com/shay-mordechai/wasm-dlp-firewall)
-
-**🔐 MyLeads AI (Secure-by-Design SaaS Architecture)**
-* **Zero Trust Environment:** Engineered a "Dark Server" environment on AWS with **zero public inbound ports**, routing traffic exclusively via **Cloudflare Argo tunnels**.
-* **Modern Stack Security:** Leverages **Next.js 14 (RSC)** to eliminate external attack surfaces, with container lifecycles managed via user-space **Systemd** and Rootless Podman on RHEL.
-* **Privacy-First AI:** Implemented local audio transcription (Faster-Whisper) ensuring sensitive data never leaves the edge server.
-* [🔗 View Architecture Showcase](https://github.com/shay-mordechai/myleads-saas-showcase) | [🌐 Live Demo](https://my-leads.app/)
-
-**📱 Mobile & Browser Security Internals**
-* **V8 JIT & Memory Internals:** Authored a deep-dive analysis on **V8 JIT engines** (core to Android Webview and mobile exploit chains), focusing on RWX memory page exploitation and the collapse of Code/Data isolation.
-* **React Server Components (RSC):** Researching the **Flight Protocol** for insecure deserialization and logic bypass vectors in Next.js environments.
-
-**🌐 Network Protocol Hardening & Analysis**
-* **Deterministic TTL Mitigations:** Proposed an architectural Layer-3 mitigation for DNS Rebinding (LANJack), specifically addressing vectors where **mobile devices** are used as proxies to exploit local internal networks. Validated through collaboration with industry vendors (**TP-Link PSIRT**).
-* **TLS 1.2 Handshake Simulator:** Engineered a 4,000+ line Python framework using **Scapy** to simulate full TLS 1.2 handshake sessions. Implemented cryptographic operations from scratch (RSA, PRF, AES-128-CBC) and an automated SSLKeyLog generator for Wireshark traffic decryption.
 
 ---
 
 ### 🛠️ Tech Stack & Methodology
 
-**Security, OS & Incident Response**
-* **OS & Infrastructure:** Linux Internals (Namespaces, Cgroups, eBPF), Fedora Kinoite (Immutable OS), Rootless Podman, AWS Architecture.
-* **Vulnerability Research:** Zero-Days, Fuzzing, Binary Analysis, JIT Internals, Insecure Deserialization.
-* **Threat Detection:** Malware Analysis, Yara Rules, Device Log Parsing, Incident Response workflows.
+**Offensive Security & Reverse Engineering**
 
-**Network Engineering & Data**
-* **Network Analysis:** Deep L2-L7 Protocol understanding, Scapy, Raw Sockets, PCAP Parsing, IPv4/IPv6, Wireshark.
-* **Data & Analytics:** Statistical Analysis, Complex Data Sets, Data Manipulation, SQL/KQL.
+* 
+**Reverse Engineering:** Conducted static analysis using IDA and dynamic analysis with WinDbg and x32dbg.
 
-**Development & Automation**
-* **Languages:** Python (AsyncIO, Pandas), Rust, JavaScript/TypeScript, Bash, C/C++, x86 Assembly.
-* **AI & ML:** Custom Fuzzer Development, LLM-Augmented Research, AI Agents orchestration.
+
+* 
+**Evasion & Exploitation:** Bypassing anti-debugging mechanisms , deobfuscating self-modifying code, Runtime Code Manipulation, Hooking, Fuzzing.
+
+
+* **Red Teaming:** TTPs analysis, Threat Hunting, Web Penetration Testing, Bug Bounty (Vulnerability Disclosure).
+
+**OS Internals & Infrastructure**
+
+* **OS Architecture:** Linux Internals (Namespaces, Cgroups, eBPF), Fedora Kinoite (Immutable OS), Systemd, Memory Isolation.
+* **Cloud & Edge:** AWS Architecture, Rootless Podman, Envoy Proxy, Cloudflare Tunnels (Zero-Trust).
+
+**Network Engineering & Development**
+
+* **Network Analysis:** Deep L2-L7 Protocol understanding, Scapy, Raw Sockets, PCAP Parsing, DPI.
+* **Languages:** Rust (`no_std`, Wasm), Python (Scapy, AsyncIO), C/C++, x86/x64 Assembly, Bash, JavaScript.
 
 ---
 
-### 🌱 Currently Learning
-Deepening expertise in **Advanced Malware Analysis & Reverse Engineering**, extracting IoCs/IoAs, unpacking Ransomware payloads, and writing custom **Yara rules** for proactive threat detection.
+### 🌱 Continuous Research
+
+Actively mastering advanced malware analysis by reverse-engineering proprietary logic, focusing on extracting IoCs, unpacking evasive payloads, and writing custom **Yara rules** for proactive threat detection.
 
 ---
 
-### 📚 Knowledge Base & Articles
+### 📚 Knowledge Base
 
-* [📝 **V8 JIT Internals & RWX Exploitation**](https://www.linkedin.com/pulse/%D7%94%D7%9E%D7%A7%D7%A6%D7%95%D7%A2-%D7%94%D7%97%D7%93%D7%A9-fullstack-security-researcher-shay-mordechai-r2e8e/)
-  A deep-dive technical analysis into modern browser engines, focusing on how JIT compilers bypass traditional memory isolation boundaries.
-* [📂 **Network Security Toolbox**](https://github.com/shay-mordechai/Network-Security-Toolbox) - Custom tools for packet manipulation and protocol analysis.
-* [📂 **Academic CS Summaries**](https://github.com/shay-mordechai/Academic-CS-Summaries) - Deep dives into Design Patterns, SOLID principles, and Network Analysis.
+* [📂 **Network Security Toolbox](https://github.com/shay-mordechai/Network-Security-Toolbox)** - Custom tools for packet manipulation and protocol analysis.
+* [🔐 **MyLeads AI Showcase](https://github.com/shay-mordechai/myleads-saas-showcase)** - A secure-by-design "Dark Server" architecture highlighting Zero-Trust engineering.
 
 ---
 
 📫 **How to reach me:** [linkedin.com/in/shay-mordechai](https://www.linkedin.com/in/shay-mordechai/)
 
-> *"Detecting the signal within the noise. From Packet Headers to Kernel Namespaces."*
+> *"Detecting the signal within the noise. From Runtime Execution Hooking to Kernel Namespaces."*
