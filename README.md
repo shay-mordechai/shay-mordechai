@@ -58,7 +58,4 @@ I specialize in **Vulnerability Discovery**, **Reverse Engineering**, and **OS/N
 
 📫 **Connect with me:** [linkedin.com/in/shay-mordechai](https://www.linkedin.com/in/shay-mordechai/)
 
-> *"From JNI Bridge Hooking to Kernel-Level Hardening. Mapping the undisclosed."*
-4.  **מילות מפתח (TTPs):** דאגנו שהן יופיעו בכל הפרויקטים הרלוונטיים.
-
-**רוצה שאעזור לך לעדכן את הקבצים ב-GitHub עם התיאורים החדשים האלו, או שנתחיל לעבוד על ה-Cover Letter למשרה ב-Alice?**
+> *"From JNI Bridge Hooking to Kernel-Level Hardening. Mapping the undisclosed."**
