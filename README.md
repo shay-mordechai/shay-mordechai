@@ -58,4 +58,4 @@ I specialize in **Vulnerability Discovery**, **Reverse Engineering**, and **OS/N
 
 📫 **Connect with me:** [linkedin.com/in/shay-mordechai](https://www.linkedin.com/in/shay-mordechai/)
 
-> *"From JNI Bridge Hooking to Kernel-Level Hardening. Mapping the undisclosed."**
+> *"From JNI Bridge Hooking to Kernel-Level Hardening. Mapping the undisclosed."*
