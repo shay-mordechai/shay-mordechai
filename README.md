@@ -1,7 +1,3 @@
-הנה עדכון מקיף לפרופיל/README שלך. המטרה כאן היא למזג את החלקים החזקים מהגרסה הישנה יחד עם הישגי הארכיטקטורה של **MyLeads AI** והניסיון המעשי שלך מרשות המיסים, תוך שמירה על המיקוד המבוקש ב-**AI Security & OS Internals**:
-
----
-
 # Shay Mordechai
 
 **Security Researcher & AppSec Engineer** focused on OS internals, secure systems architecture, and runtime security boundaries.
